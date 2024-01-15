@@ -1,0 +1,10 @@
+{
+    "AvalancheAPI": {
+        "url": "https://glacier-api.avax.network/v1/networks/mainnet/blockchains/x-chain/transactions"
+    },
+    "ColumnMappings": {
+        "txHash": "Transaction Hash",
+        "blockHeight": "Block Height",
+        "txType": "Transaction Type"
+    }
+}
