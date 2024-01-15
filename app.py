@@ -14,7 +14,7 @@ app = Flask(__name__)
 
 def run_workflow_manager():
     manager = WorkflowManager()
-    manager.run()  # Assuming `run` is the method to start the workflow
+    manager.run_avalanche_data_workflow()  # Assuming `run` is the method to start the workflow
 
 scheduler = BackgroundScheduler()
 scheduler.add_job(func=run_workflow_manager, trigger="interval", seconds=3600)
