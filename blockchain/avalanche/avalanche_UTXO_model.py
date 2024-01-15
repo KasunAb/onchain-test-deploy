@@ -1,4 +1,4 @@
-from src.models.general_UTXO_model import GeneralUTXO
+from models.general_UTXO_model import GeneralUTXO
 
 class AvalancheUTXO(GeneralUTXO):
     def __init__(self, utxoId, txHash, blockHash, txType, addresses, assetId, asset_name, symbol, denomination, asset_type, amount):

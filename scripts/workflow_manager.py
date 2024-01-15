@@ -3,11 +3,11 @@ import sys
 import os
 import datetime
 import logging
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..')))
 
-from src.blockchain.avalanche.avalanche_data_extraction import extract_avalanche_data
-from src.services.data_storage_service import store_data, get_last_transaction_data, set_last_transaction_data
-from src.services.metrics_computation_service import compute_transaction_count,compute_average_transactions_per_block,compute_total_staked_amount,compute_total_burned_amount, compute_average_transaction_value, compute_large_transaction_monitoring, compute_cross_chain_whale_activity
+
+from blockchain.avalanche.avalanche_data_extraction import extract_avalanche_data
+from services.data_storage_service import store_data, get_last_transaction_data, set_last_transaction_data
+from services.metrics_computation_service import compute_transaction_count,compute_average_transactions_per_block,compute_total_staked_amount,compute_total_burned_amount, compute_average_transaction_value, compute_large_transaction_monitoring, compute_cross_chain_whale_activity
 # from data_processing import process_data
 
 import os

@@ -8,9 +8,9 @@ import os
 import sys
 sys.path.insert(0, 'D:\\Academics\\FYP\\Repos\\Blockchain-On-Chain-Extendible-Framework')
 
-from src.utils.http_utils import fetch_transactions
-from src.blockchain.avalanche.avalanche_model import Avalanche_X_Model, Avalanche_C_Model, Avalanche_P_Model
-from src.blockchain.avalanche.avalanche_UTXO_model import AvalancheUTXO
+from utils.http_utils import fetch_transactions
+from blockchain.avalanche.avalanche_model import Avalanche_X_Model, Avalanche_C_Model, Avalanche_P_Model
+from blockchain.avalanche.avalanche_UTXO_model import AvalancheUTXO
 
 def extract_x_chain_data(last_timestamp):
     page_token = None
